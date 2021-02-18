@@ -1,0 +1,25 @@
+# Template information section
+name: "swifty_viper_templates"
+summary: "Swift MVP TEMPLATES module template"
+author: "Ivan Berkut"
+version: "0.1.1"
+license: "MIT"
+
+# The declarations for swifty_mvp_templates/Code files
+
+code_files:
+# Protocols
+- {name: Protocols.swift, path: swifty_viper_templates/Code/protocols.swift.liquid}
+
+# View layer
+- {name: ViewController.swift, path: swifty_viper_templates/Code/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter.swift, path: swifty_viper_templates/Code/presenter.swift.liquid}
+
+# Router layer
+- {name: Router.swift, path: swifty_viper_templates/Code/router.swift.liquid}
+
+# Configurator
+- {name: Assembly.swift, path: swifty_viper_templates/Code/assembly.swift.liquid}
+
