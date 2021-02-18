@@ -12,15 +12,15 @@ class {{ module_info.name }}Assembly {
 
     func configureModule() -> UIViewController {
     
-        let controller = {{ module_info.name }}ViewController()
-        let router = {{ module_info.name }}Router(viewController: viewController)
+        let controller = {{ module_info.name }}Controller()
+        let router = {{ module_info.name }}Router(viewController: controller)
         let presenter = {{ module_info.name }}Presenter()
 
         presenter.router = router
         presenter.view = controller
         controller.output = presenter
         
-        return viewController
+        return controller
     }
 
 }
