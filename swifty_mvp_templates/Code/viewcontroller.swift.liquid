@@ -18,7 +18,7 @@ class {{ module_info.name }}Controller: BaseViewController {
     // MARK: - Life cycle
 
     override func loadView() {
-        view = {{ module_info.name }}View
+        view = {{ module_info.name }}View()
     }
 
     override func viewDidLoad() {
@@ -39,9 +39,7 @@ class {{ module_info.name }}Controller: BaseViewController {
 extension {{ module_info.name }}Controller: {{module_info.name}}ViewInput {
 
     func showMessage(message: String) {
-        showError(title: message, message: "", onOkPressed: { [weak self] in
-            self?.output.viewDidAppear()
-        })
+    
     }
     
 }

@@ -14,6 +14,8 @@ code_files:
 # View layer
 - {name: ViewController.swift, path: swifty_mvp_templates/Code/viewcontroller.swift.liquid}
 
+- {name: View.swift, path: swifty_mvp_templates/Code/view.swift.liquid}
+
 # Presenter layer
 - {name: Presenter.swift, path: swifty_mvp_templates/Code/presenter.swift.liquid}
 
